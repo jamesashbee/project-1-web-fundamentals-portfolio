@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +51,24 @@ a {
   font-size: 1.5rem;
 }
 
+/*Page max 800 px then stacks, padded with space between*/
+@media (max-width: 800px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
 .navigation {
   width: 100%;
   height: 7vh;
@@ -53,43 +79,6 @@ a {
   align-items: center;
   flex-wrap: wrap;
   background: #262835;
-}
-
-/*About CSS*/
-#about {
-  background-color: #090b18;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/*Project */
-#project-container {
-  background-color: #090b18;
-  padding: 40px;
-}
-
-/* Contact Me */
-.contact-me-container {
-  background-color: #090b18;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-/*Footer */
-footer {
-  background-color: #262835;
-}
-
-.footer-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 15vh;
 }
 
 /*Nav bar*/
@@ -125,6 +114,35 @@ footer {
   font-size: 1.25em;
 }
 
+/*Page max 800 px then stacks, padded with space between*/
+@media (max-width: 800px) {
+  /*Media nav*/
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 35vh;
+  }
+
+  .logo {
+    height: 6vh;
+  }
+
+  .nav-links-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links-items {
+    height: 5vh;
+  }
+
+  .nav-links-icons {
+    justify-content: flex-start;
+  }
+  .nav-links-icons i {
+    padding-right: 15px;
+  }
+}
 /*Intro CSS*/
 .intro-header {
   height: 40vh;
@@ -162,34 +180,20 @@ footer {
   align-items: center;
 }
 
-.button {
-  width: 200px;
-  text-align: center;
-  padding: 15px 20px;
-  border-radius: 10px;
+/*Page max 800 px then stacks, padded with space between*/
+@media (max-width: 800px) {
+  /*media header*/
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 }
-
-.button--intro-view-btn-section {
-  background-color: #262835;
-  border: #ffb900 solid 1px;
-}
-
-.button--con-btn-container {
-  background-color: #262835;
-  border: #ffb900 solid 1px;
-}
-
-#intro-button {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.p-header {
-  height: 10vh;
-  width: 100%;
-  color: #ffb900;
-  text-decoration: underline;
-  text-align: center;
+/*About CSS*/
+#about {
+  background-color: #090b18;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*About CSS*/
@@ -221,6 +225,49 @@ footer {
 .about-info-right img {
   width: auto;
   height: 300px;
+}
+
+/*Page max 800 px then stacks, padded with space between*/
+@media (max-width: 800px) {
+  /*media about*/
+  #about {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-block-end: 10%;
+  }
+
+  .about-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .about-info-left {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .about-info-left li {
+    text-indent: 1%;
+  }
+
+  .about-info-right {
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+  }
+  .about-info-right img {
+    width: 70vw;
+    height: auto;
+  }
+}
+/*Project */
+#project-container {
+  background-color: #090b18;
+  padding: 40px;
 }
 
 /*Project CSS*/
@@ -334,6 +381,83 @@ footer {
   width: auto;
 }
 
+/*Page max 800 px then stacks, padded with space between*/
+@media (max-width: 800px) {
+  /*media Projects*/
+  #project-container {
+    padding: 10px;
+  }
+
+  .Project-line-container {
+    flex: column;
+    padding: 4px 4px 10px 4px;
+  }
+
+  .project-left-frame {
+    height: auto;
+    width: 100%;
+    border: 1px solid #ffb900;
+  }
+
+  .project-title {
+    height: auto;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .project-description {
+    height: auto;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .project-buttons-parent-frame {
+    flex-direction: column;
+    height: auto;
+    row-gap: 8px;
+  }
+
+  .p-button-skills-frame {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .p-site-links-parent-frame {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .l-button {
+    height: auto;
+  }
+
+  .project-right-frame {
+    height: auto;
+    width: 100%;
+    border: 1px solid #ffb900;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .project-right-frame img {
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
+    width: auto;
+  }
+}
+/* Contact Me */
+.contact-me-container {
+  background-color: #090b18;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 /*Contact me CSS*/
 .contact-frame {
   border-radius: 5px;
@@ -399,175 +523,8 @@ input {
   text-decoration: none;
 }
 
-/*Footer CSS*/
-.footer-container__text {
-  color: #ffffff;
-  padding-right: 10px;
-}
-
-.footer-icons {
-  width: 15%;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  justify-content: space-evenly;
-}
-.footer-icons i {
-  color: #ffb900;
-  font-size: 1.5em;
-}
-
 /*Page max 800 px then stacks, padded with space between*/
 @media (max-width: 800px) {
-  h1 {
-    font-size: 36px;
-  }
-
-  h2 {
-    font-size: 28px;
-  }
-
-  h3 {
-    font-size: 24px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  /*Media nav*/
-  .navigation {
-    flex-direction: column;
-    align-items: flex-start;
-    height: 35vh;
-  }
-
-  .logo {
-    height: 6vh;
-  }
-
-  .nav-links-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links-items {
-    height: 5vh;
-  }
-
-  .nav-links-icons {
-    justify-content: flex-start;
-  }
-  .nav-links-icons i {
-    padding-right: 15px;
-  }
-
-  /*media header*/
-  #header {
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  /*media about*/
-  #about {
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding-block-end: 10%;
-  }
-
-  .about-container {
-    flex-direction: column;
-    flex-wrap: wrap;
-    row-gap: 8px;
-  }
-
-  .about-info-left {
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: auto;
-  }
-  .about-info-left li {
-    text-indent: 1%;
-  }
-
-  .about-info-right {
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    height: auto;
-  }
-  .about-info-right img {
-    width: 70vw;
-    height: auto;
-  }
-
-  /*media Projects*/
-  /*Project CSS*/
-  #project-container {
-    padding: 10px;
-  }
-
-  .Project-line-container {
-    flex: column;
-    padding: 4px 4px 10px 4px;
-  }
-
-  .project-left-frame {
-    height: auto;
-    width: 100%;
-    border: 1px solid #ffb900;
-  }
-
-  .project-title {
-    height: auto;
-    padding: 10px 0px 10px 0px;
-  }
-
-  .project-description {
-    height: auto;
-    padding: 10px 0px 10px 0px;
-  }
-
-  .project-buttons-parent-frame {
-    flex-direction: column;
-    height: auto;
-    row-gap: 8px;
-  }
-
-  .p-button-skills-frame {
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-  }
-
-  .p-site-links-parent-frame {
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    padding: 10px 0px 10px 0px;
-  }
-
-  .l-button {
-    height: auto;
-  }
-
-  .project-right-frame {
-    height: auto;
-    width: 100%;
-    border: 1px solid #ffb900;
-    padding: 10px 0px 10px 0px;
-  }
-
-  .project-right-frame img {
-    max-width: 90%;
-    max-height: 90%;
-    height: auto;
-    width: auto;
-  }
-
   /*media contact me */
   .contact-me-container {
     padding: 20px 10px 60px 10px;
@@ -605,7 +562,39 @@ input {
   textarea {
     height: 200px;
   }
+}
+/*Footer */
+footer {
+  background-color: #262835;
+}
 
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+}
+
+/*Footer CSS*/
+.footer-container__text {
+  color: #ffffff;
+  padding-right: 10px;
+}
+
+.footer-icons {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+.footer-icons i {
+  color: #ffb900;
+  font-size: 1.5em;
+}
+
+/*Page max 800 px then stacks, padded with space between*/
+@media (max-width: 800px) {
   /*Media Footer */
   .footer-container {
     flex-direction: column;
@@ -617,4 +606,33 @@ input {
   .footer-icons i {
     padding-right: 15px;
   }
+}
+.button {
+  width: 200px;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.button--intro-view-btn-section {
+  background-color: #262835;
+  border: #ffb900 solid 1px;
+}
+
+.button--con-btn-container {
+  background-color: #262835;
+  border: #ffb900 solid 1px;
+}
+
+#intro-button {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.p-header {
+  height: 10vh;
+  width: 100%;
+  color: #ffb900;
+  text-decoration: underline;
+  text-align: center;
 }

@@ -1,0 +1,51 @@
+@use "../abstracts/variables";
+
+/*Intro CSS*/
+
+.intro-header {
+  height: 40vh;
+  width: auto;
+  background-color: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.font-yellow {
+  color: $color-secondary;
+}
+
+.intro-sub-header {
+  height: 30vh;
+  width: auto;
+  background-color: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.intro-view-btn-section {
+  height: 25vh;
+  width: 100vw;
+  background-color: $color-primary;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*Page max 800 px then stacks, padded with space between*/
+@media (max-width: 800px) {
+
+  /*media header*/
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}

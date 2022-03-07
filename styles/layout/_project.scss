@@ -1,0 +1,206 @@
+@use "../abstracts/variables";
+
+/*Project */
+
+#project-container {
+  background-color: $color-primary;
+  padding: 40px;
+}
+
+
+
+
+/*Project CSS*/
+
+
+.Project-line-container {
+  display: flex;
+  flex: row;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.project-left-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 70%;
+  border: 1px solid $color-secondary;
+}
+
+.project-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 5vh;
+  width: 96%;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 15vh;
+  width: 96%;
+
+  & h4 {
+    color: $color-white;
+  }
+}
+
+.project-buttons-parent-frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 7vh;
+  width: 96%;
+}
+
+.p-button-skills-frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 7vh;
+  width: 50%;
+}
+
+.ps-button {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-primary-light;
+  border: none;
+  color: $color-white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+  font-size: 16px;
+  width: 12%;
+}
+
+.p-site-links-parent-frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 7vh;
+  width: 50%;
+}
+
+.l-button {
+  display: flex;
+  flex-direction: row;
+  background-color: none;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+  background-color: $color-secondary;
+  border: none;
+  color: $color-white;
+  padding: 15px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 24%;
+}
+
+.project-right-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 25%;
+  border: 1px solid $color-secondary;
+
+  & img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+  }
+}
+
+
+
+/*Page max 800 px then stacks, padded with space between*/
+@media (max-width: 800px) {
+
+  /*media Projects*/
+  #project-container {
+    padding: 10px;
+  }
+
+
+  .Project-line-container {
+    flex: column;
+    padding: 4px 4px 10px 4px;
+
+  }
+
+  .project-left-frame {
+
+    height: auto;
+    width: 100%;
+    border: 1px solid $color-secondary;
+
+  }
+
+  .project-title {
+
+    height: auto;
+    padding: 10px 0px 10px 0px;
+
+  }
+
+  .project-description {
+    height: auto;
+    padding: 10px 0px 10px 0px;
+  }
+
+
+  .project-buttons-parent-frame {
+    flex-direction: column;
+    height: auto;
+    row-gap: 8px;
+  }
+
+  .p-button-skills-frame {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+
+
+  .p-site-links-parent-frame {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px 0px 10px 0px;
+
+  }
+
+  .l-button {
+    height: auto;
+
+  }
+
+  .project-right-frame {
+    height: auto;
+    width: 100%;
+    border: 1px solid $color-secondary;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .project-right-frame img {
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
+    width: auto;
+  }
+}

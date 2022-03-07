@@ -1,0 +1,53 @@
+@use "../abstracts/variables";
+
+/*Footer */
+footer {
+  background-color: $color-primary-light;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+}
+
+
+/*Footer CSS*/
+
+.footer-container__text {
+  color: $color-white;
+  padding-right: 10px;
+}
+
+.footer-icons {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  justify-content: space-evenly;
+
+
+  & i {
+    color: $color-secondary;
+    font-size: 1.5em;
+  }
+}
+
+
+/*Page max 800 px then stacks, padded with space between*/
+@media (max-width: 800px) {
+
+  /*Media Footer */
+  .footer-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    row-gap: 8px;
+  }
+
+  .footer-icons i {
+    padding-right: 15px;
+  }
+}

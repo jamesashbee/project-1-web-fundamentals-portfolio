@@ -1,0 +1,33 @@
+@use "../abstracts/variables";
+
+
+
+.button {
+  width: 200px;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.button--intro-view-btn-section {
+  background-color: $color-primary-light;
+  border: $color-secondary solid 1px;
+}
+
+.button--con-btn-container {
+  background-color: $color-primary-light;
+  border: $color-secondary solid 1px;
+}
+
+#intro-button {
+  color: $color-white;
+  text-decoration: none;
+}
+
+.p-header {
+  height: 10vh;
+  width: 100%;
+  color: $color-secondary;
+  text-decoration: underline;
+  text-align: center;
+}
