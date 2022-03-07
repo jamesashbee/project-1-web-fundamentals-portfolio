@@ -2,6 +2,16 @@
 
 /*Intro CSS*/
 
+#header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 95vh;
+  background-color: $color-primary;
+  
+}
+
 .intro-header {
   height: 40vh;
   width: auto;
@@ -45,7 +55,9 @@
   /*media header*/
   #header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+    height: auto;
   }
 }

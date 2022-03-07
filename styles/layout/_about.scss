@@ -6,6 +6,8 @@
   background-color: $color-primary;
   display: flex;
   flex-wrap: wrap;
+
+
 }
 
 
@@ -20,7 +22,7 @@
 .about-info-left {
   height: 90vh;
   width: 50vw;
-  padding: 3%;
+  padding: 3% 0% 3% 3%;
 
   align-items: center;
 
@@ -34,8 +36,10 @@
 }
 
 .about-info-right {
+ 
   height: 90vh;
   width: 50vw;
+  padding: 3% 3% 3% 0%;
   display: flex;
   justify-content: center;
 
