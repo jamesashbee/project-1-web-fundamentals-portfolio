@@ -2,7 +2,7 @@
 
 /*Intro CSS*/
 
-#header{
+.header{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,9 +10,9 @@
   height: 95vh;
   background-color: $color-primary;
   
-}
 
-.intro-header {
+
+&__intro {
   height: 40vh;
   width: auto;
   background-color: $color-primary;
@@ -23,11 +23,11 @@
   text-align: center;
 }
 
-.font-yellow {
+&__span-yellow {
   color: $color-secondary;
 }
 
-.intro-sub-header {
+&__sub-section {
   height: 30vh;
   width: auto;
   background-color: $color-primary;
@@ -38,7 +38,8 @@
   text-align: center;
 }
 
-.intro-view-btn-section {
+
+&__button-section {
   height: 25vh;
   width: 100vw;
   background-color: $color-primary;
@@ -47,13 +48,13 @@
   justify-content: center;
   align-items: center;
 }
-
+}
 
 /*Page max 800 px then stacks, padded with space between*/
 @media (max-width: 800px) {
 
   /*media header*/
-  #header {
+  .header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;

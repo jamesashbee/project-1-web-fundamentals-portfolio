@@ -1,14 +1,16 @@
 # project-1-web-fundamentals-portfolio
 
-This is my first version of my responsive portfolio as of 28/2/22
 
-It now needs the following
 
-1)Initial Tutor Review
 
-2)Re Review and check if any SCSS and BEM can be improved and made more efficient
 
-3)When I have Further Skills to do the following
+
+# V2 Updates following tutor feedback 7/3/22
+-Added BEM to html and css, also did recap on it
+-some of the spacing has been imported (about and contact form, so more even)
+-hosted on git hub pages
+
+@ V2 Still to do 7/3/22
 -Make more friendly for a wider range of devices
 -Add Real Projects to the Links
 -Add an updated Photo

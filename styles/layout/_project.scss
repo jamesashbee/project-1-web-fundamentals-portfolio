@@ -13,55 +13,59 @@
 /*Project CSS*/
 
 
-.Project-line-container {
+.project {
   display: flex;
   flex: row;
   flex-wrap: wrap;
   padding: 10px;
-}
 
-.project-left-frame {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  width: 70%;
-  border: 1px solid $color-secondary;
-}
 
-.project-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: 5vh;
-  width: 96%;
-}
-
-.project-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: 15vh;
-  width: 96%;
-
-  & h4 {
-    color: $color-white;
+  &__left-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 70%;
+    border: 1px solid $color-secondary;
   }
-}
 
-.project-buttons-parent-frame {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  height: 7vh;
-  width: 96%;
-}
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 5vh;
+    width: 96%;
+  }
 
-.p-button-skills-frame {
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 15vh;
+    width: 96%;
+  
+    & h4 {
+      color: $color-white;
+    }
+  }
+
+
+  &__buttons-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 7vh;
+    width: 96%;
+  }
+
+
+
+&__buttons-skills-frame {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -70,7 +74,7 @@
   width: 50%;
 }
 
-.ps-button {
+&__skills-button {
   display: flex;
   flex-direction: column;
   background-color: $color-primary-light;
@@ -84,7 +88,7 @@
   width: 12%;
 }
 
-.p-site-links-parent-frame {
+&__links-frame {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -93,7 +97,7 @@
   width: 50%;
 }
 
-.l-button {
+&__links-button {
   display: flex;
   flex-direction: row;
   background-color: none;
@@ -109,7 +113,7 @@
   width: 24%;
 }
 
-.project-right-frame {
+&__right-frame {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,6 +129,7 @@
   }
 }
 
+}
 
 
 /*Page max 800 px then stacks, padded with space between*/
@@ -136,13 +141,13 @@
   }
 
 
-  .Project-line-container {
+  .project{
     flex: column;
     padding: 4px 4px 10px 4px;
 
-  }
 
-  .project-left-frame {
+
+  &__left-frame {
 
     height: auto;
     width: 100%;
@@ -150,26 +155,26 @@
 
   }
 
-  .project-title {
+  &__title {
 
     height: auto;
     padding: 10px 0px 10px 0px;
 
   }
 
-  .project-description {
+  &__description {
     height: auto;
     padding: 10px 0px 10px 0px;
   }
 
 
-  .project-buttons-parent-frame {
+  &__buttons-parent{
     flex-direction: column;
     height: auto;
     row-gap: 8px;
   }
 
-  .p-button-skills-frame {
+  &__buttons-skills-frame {
     width: 100%;
     height: auto;
     flex-wrap: wrap;
@@ -177,7 +182,7 @@
 
 
 
-  .p-site-links-parent-frame {
+  &__links-frame	 {
     width: 100%;
     height: auto;
     flex-wrap: wrap;
@@ -185,22 +190,24 @@
 
   }
 
-  .l-button {
+  &__links-button {
     height: auto;
 
   }
 
-  .project-right-frame {
+  &__right-frame {
     height: auto;
     width: 100%;
     border: 1px solid $color-secondary;
     padding: 10px 0px 10px 0px;
-  }
+ 
 
-  .project-right-frame img {
+  & img {
     max-width: 90%;
     max-height: 90%;
     height: auto;
     width: auto;
   }
+}
+}
 }
