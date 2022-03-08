@@ -47,7 +47,7 @@
     align-items: flex-start;
     height: 15vh;
     width: 96%;
-  
+
     & h4 {
       color: $color-white;
     }
@@ -65,69 +65,69 @@
 
 
 
-&__buttons-skills-frame {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  height: 7vh;
-  width: 50%;
-}
-
-&__skills-button {
-  display: flex;
-  flex-direction: column;
-  background-color: $color-primary-light;
-  border: none;
-  color: $color-white;
-  padding: 15px 15px;
-  text-align: center;
-  text-decoration: none;
-  margin: 2px 2px;
-  font-size: 16px;
-  width: 12%;
-}
-
-&__links-frame {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  height: 7vh;
-  width: 50%;
-}
-
-&__links-button {
-  display: flex;
-  flex-direction: row;
-  background-color: none;
-  text-align: center;
-  text-decoration: none;
-  margin: 2px 2px;
-  background-color: $color-secondary;
-  border: none;
-  color: $color-white;
-  padding: 15px 15px;
-  font-size: 16px;
-  cursor: pointer;
-  width: 24%;
-}
-
-&__right-frame {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  width: 25%;
-  border: 1px solid $color-secondary;
-
-  & img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
+  &__buttons-skills-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 7vh;
+    width: 50%;
   }
-}
+
+  &__skills-button {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-primary-light;
+    border: none;
+    color: $color-white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    font-size: 16px;
+    width: 12%;
+  }
+
+  &__links-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 7vh;
+    width: 50%;
+  }
+
+  &__links-button {
+    display: flex;
+    flex-direction: row;
+    background-color: none;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    background-color: $color-secondary;
+    border: none;
+    color: $color-white;
+    padding: 15px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 24%;
+  }
+
+  &__right-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 25%;
+    border: 1px solid $color-secondary;
+
+    & img {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      width: auto;
+    }
+  }
 
 }
 
@@ -141,73 +141,73 @@
   }
 
 
-  .project{
+  .project {
     flex: column;
     padding: 4px 4px 10px 4px;
 
 
 
-  &__left-frame {
+    &__left-frame {
 
-    height: auto;
-    width: 100%;
-    border: 1px solid $color-secondary;
+      height: auto;
+      width: 100%;
+      border: 1px solid $color-secondary;
 
+    }
+
+    &__title {
+
+      height: auto;
+      padding: 10px 0px 10px 0px;
+
+    }
+
+    &__description {
+      height: auto;
+      padding: 10px 0px 10px 0px;
+    }
+
+
+    &__buttons-parent {
+      flex-direction: column;
+      height: auto;
+      row-gap: 8px;
+    }
+
+    &__buttons-skills-frame {
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+    }
+
+
+
+    &__links-frame {
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+      padding: 10px 0px 10px 0px;
+
+    }
+
+    &__links-button {
+      height: auto;
+
+    }
+
+    &__right-frame {
+      height: auto;
+      width: 100%;
+      border: 1px solid $color-secondary;
+      padding: 10px 0px 10px 0px;
+
+
+      & img {
+        max-width: 90%;
+        max-height: 90%;
+        height: auto;
+        width: auto;
+      }
+    }
   }
-
-  &__title {
-
-    height: auto;
-    padding: 10px 0px 10px 0px;
-
-  }
-
-  &__description {
-    height: auto;
-    padding: 10px 0px 10px 0px;
-  }
-
-
-  &__buttons-parent{
-    flex-direction: column;
-    height: auto;
-    row-gap: 8px;
-  }
-
-  &__buttons-skills-frame {
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-  }
-
-
-
-  &__links-frame	 {
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    padding: 10px 0px 10px 0px;
-
-  }
-
-  &__links-button {
-    height: auto;
-
-  }
-
-  &__right-frame {
-    height: auto;
-    width: 100%;
-    border: 1px solid $color-secondary;
-    padding: 10px 0px 10px 0px;
- 
-
-  & img {
-    max-width: 90%;
-    max-height: 90%;
-    height: auto;
-    width: auto;
-  }
-}
-}
 }

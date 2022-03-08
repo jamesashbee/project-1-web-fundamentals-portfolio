@@ -49,10 +49,10 @@
 
 
 
-&__i {
-  color: $color-secondary;
-  font-size: 1.25em;
-}
+  &__i {
+    color: $color-secondary;
+    font-size: 1.25em;
+  }
 }
 
 /*Page max 800 px then stacks, padded with space between*/
@@ -69,15 +69,15 @@
     height: 6vh;
   }
 
-  .nav-links{
+  .nav-links {
     flex-direction: column;
     align-items: flex-start;
- 
 
-  &__items {
-    height: 5vh;
+
+    &__items {
+      height: 5vh;
+    }
   }
-}
 
   .nav-links-icons {
     justify-content: flex-start;
